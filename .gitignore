@@ -1,0 +1,57 @@
+# Dependências
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build
+dist/
+build/
+*.min.js
+*.min.css
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+
+# Testes
+coverage/
+*.test.js
+.jest/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Backup
+*.backup
+*~
+*.bak
+
+# Compilados
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Temporários
+tmp/
+temp/

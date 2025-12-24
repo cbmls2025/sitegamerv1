@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jogo de Briga - Fight Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Fight Arena</h1>
+    <a class="back" href="../index.html">Voltar</a>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <label>Modo: 
+        <select id="modeSelect">
+          <option value="ai">Vs IA</option>
+          <option value="local">2 Jogadores</option>
+        </select>
+      </label>
+      <button id="startBtn">Iniciar</button>
+      <div class="hint">Player 1: A/D mover, W pular, F soco, G chute. Player 2: ←/→ mover, ↑ pular, / soco, . chute</div>
+    </section>
+
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <section class="hud" aria-hidden="true">
+      <div id="leftHud">Player 1: <span id="p1Health">100</span></div>
+      <div id="centerMsg"></div>
+      <div id="rightHud">Player 2: <span id="p2Health">100</span></div>
+    </section>
+  </main>
+
+  <script src="characters.js"></script>
+  <script src="controls.js"></script>
+  <script src="ai.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

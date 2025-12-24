@@ -1,0 +1,45 @@
+{
+  "name": "crazygames",
+  "version": "1.0.0",
+  "description": "Plataforma web de jogos de tiro online, gratuita, sem instalação",
+  "main": "js/game.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Projeto não necessita build - é puro HTML5'",
+    "test": "echo 'Abra testes.html no navegador'",
+    "deploy:netlify": "npm run build && netlify deploy",
+    "deploy:vercel": "vercel",
+    "deploy:github": "git push -u origin main"
+  },
+  "keywords": [
+    "jogos",
+    "tiro",
+    "online",
+    "canvas",
+    "html5",
+    "javascript",
+    "games",
+    "shooting",
+    "crazy-games"
+  ],
+  "author": "CrazyGames Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/jogossite.git"
+  },
+  "homepage": "https://github.com/seu-usuario/jogossite#readme",
+  "bugs": {
+    "url": "https://github.com/seu-usuario/jogossite/issues"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  },
+  "optionalDependencies": {
+    "netlify-cli": "^13.0.0",
+    "vercel": "^28.0.0"
+  }
+}

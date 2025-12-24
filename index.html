@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CrazyGames - Plataforma de jogos de tiro online, gratuitos e sem instalação">
+    <meta name="keywords" content="jogos online, jogos de tiro, jogos grátis, CrazyGames">
+    <title>CrazyGames - Jogos de Tiro Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">CRAZY GAMES</span>
+            </div>
+
+            <div class="header-actions">
+                <button class="header-btn search-btn" title="Pesquisar">
+                    <span>🔍</span>
+                </button>
+                <button class="header-btn notification-btn" title="Notificações">
+                    <span>🔔</span>
+                    <span class="badge">1</span>
+                </button>
+                <button class="header-btn profile-btn" title="Perfil">
+                    <span>👤</span>
+                </button>
+                <button class="header-btn app-btn">
+                    <span>App</span>
+                    <span>⬈</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER PROMOCIONAL -->
+    <section class="banner-promo">
+        <div class="banner-content">
+            <h2>Jogue CrazyGames no aplicativo</h2>
+            <button class="btn-primary">Vamos lá!</button>
+        </div>
+        <button class="banner-close">✕</button>
+    </section>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main class="main-content">
+        <!-- SEÇÃO DE JOGOS DE TIRO -->
+        <section class="games-section">
+            <div class="section-header">
+                <div>
+                    <h1>Jogos de Tiro</h1>
+                    <p>Explore uma coleção incrível de jogos de tiro com gráficos impressionantes e jogabilidade imersiva</p>
+                </div>
+                <button class="btn-secondary">Mostrar Mais</button>
+            </div>
+
+            <div class="games-controls">
+                <select class="filter-dropdown" id="filterDropdown">
+                    <option value="popular">Mais Populares</option>
+                    <option value="novos">Mais Novos</option>
+                    <option value="top">Top Jogos</option>
+                    <option value="alfabetico">Alfabético</option>
+                </select>
+            </div>
+
+            <!-- GRID DE GAMES -->
+            <div class="games-grid">
+                <!-- Card 1: Sniper Mission -->
+                <div class="game-card" data-game="sniper-mission">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/1.jfif" alt="Sniper Mission">
+                        <div class="game-overlay">
+                            <button class="btn-play">Jogar</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Sniper Mission</h3>
+                        <p class="game-category">Tiro</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.8</span>
+                            <span>👥 50K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Pew Pew Dose -->
+                <div class="game-card" data-game="pew-pew-dose">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/2.jfif" alt="Pew Pew Dose">
+                        <div class="game-overlay">
+                            <button class="btn-play">Jogar</button>
+                        </div>
+                        <div class="game-badge">99</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Pew Pew Dose</h3>
+                        <p class="game-category">Ação/Tiro</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.5</span>
+                            <span>👥 32K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Zombie Apocalypse -->
+                <div class="game-card" data-game="zombie-apocalypse">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/3.jfif" alt="Zombie Apocalypse">
+                        <div class="game-overlay">
+                            <button class="btn-play">Jogar</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Zombie Apocalypse</h3>
+                        <p class="game-category">Tiro/Horror</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.6</span>
+                            <span>👥 45K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Tactical Strike -->
+                <div class="game-card" data-game="tactical-strike">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/4.jfif" alt="Tactical Strike">
+                        <div class="game-overlay">
+                            <button class="btn-play">Jogar</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Tactical Strike</h3>
+                        <p class="game-category">Estratégia/Tiro</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.7</span>
+                            <span>👥 28K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Space Warriors -->
+                <div class="game-card" data-game="space-warriors">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/5.jfif" alt="Space Warriors">
+                        <div class="game-overlay">
+                            <button class="btn-play">Jogar</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Space Warriors</h3>
+                        <p class="game-category">Sci-Fi/Tiro</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.4</span>
+                            <span>👥 35K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Gun Master -->
+                <div class="game-card" data-game="gun-master">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/6.jfif" alt="Gun Master">
+                        <div class="game-overlay">
+                            <button class="btn-play">Jogar</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Gun Master</h3>
+                        <p class="game-category">Ação/Tiro</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.9</span>
+                            <span>👥 60K</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7: Jogo de Briga -->
+                <div class="game-card" data-game="fighting">
+                    <div class="game-image">
+                        <img src="/imagem.jogos.v1/7.jfif" alt="Jogo de Briga">
+                        <div class="game-overlay">
+                            <a class="btn-play" href="jogo-de-briga/index.html">Jogar</a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Fight Arena</h3>
+                        <p class="game-category">Luta 2D</p>
+                        <div class="game-stats">
+                            <span>⭐ 4.9</span>
+                            <span>👥 Novo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CrazyGames. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#privacidade">Privacidade</a>
+                <a href="#termos">Termos</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
